@@ -8,7 +8,8 @@ $judul = preg_replace('/[^a-zA-Z0-9_]/', '', $judul); // Hanya izinkan huruf, an
 // Buat query untuk membuat tabel
 $sql = "CREATE TABLE $judul (
     id INT AUTO_INCREMENT,
-    kegiatan VARCHAR(30) NOT NULL,
+    judul VARCHAR(30),
+    kegiatan VARCHAR(255) NOT NULL,
     cek VARCHAR(2) NOT NULL,
     PRIMARY KEY (id)
 )";
