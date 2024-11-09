@@ -17,8 +17,10 @@ $sql = "CREATE TABLE $judul (
 // Eksekusi query dan cek hasilnya
 if (mysqli_query($koneksi, $sql)) {
     echo "Tabel Berhasil Dibuat";
+    header("location:showAwal.php");
 } else {
     echo "Error: " . mysqli_error($koneksi);
+    header("location:showAwal.php");
 }
 
 // Tutup koneksi

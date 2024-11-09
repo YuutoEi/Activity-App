@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +17,8 @@
         <input type="submit" value="CREATE">
 
     </form> 
+
+    <a href="tambahData.php">Add</a>
 
 
 </body>
